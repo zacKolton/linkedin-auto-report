@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/Users/zackolton/Projects/Imports/selenium-java-3/**/*.jar"
+    ]
+}
