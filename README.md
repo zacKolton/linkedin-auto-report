@@ -7,6 +7,6 @@ Which is essentially why you are here now, to get rid of THESE:
 
 Yeah me too. 
 
-Essentially, the selenium WebDriver logs into your linkedIn, goes to the search bar, and types in a common phrase like "Double click on this picture to see the hidden face.". Then it will report each person in the results as spam.
+Essentially, the selenium WebDriver logs into your linkedIn, goes to the search bar, and types in a common phrase like "Double click on this picture to see the hidden face." then it will report each person in the results as spam. Looping through this process as many times as you want really.
 
 After doing this roughly 20 times, the linkedIn algorithm should recognize YOU DON"T WANT TO SEE THIS TYPE OF CRAP
