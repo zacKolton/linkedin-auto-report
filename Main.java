@@ -59,8 +59,8 @@ public class Main
         WebElement form             = Elements.getElementCSS(driver, FORM_SUBMIT);
         //WebElement signIn        = Elements.getElementCSS(driver, SIGN_IN_BTN);
 
-        Interaction.sendKeys(userNameInput, "zac.kolton@hotmail.com");
-        Interaction.sendKeys(passwordInput, "19lakewinnipeg");
+        Interaction.sendKeys(userNameInput, "{{YOUR USER NAME}}");
+        Interaction.sendKeys(passwordInput, "{{YOUR PASSWORD}}");
         Interaction.submit(form);
         //Interaction.click(signIn);
 
