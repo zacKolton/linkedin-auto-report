@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,6 +20,26 @@ public class Elements {
     public static WebElement getElementCSS(WebDriver driver, String selector)
     {
         return driver.findElement(By.cssSelector(selector));
+    }
+
+    public static WebElement getElementCSS(WebElement container, String selector)
+    {
+        return container.findElement(By.cssSelector(selector));
+    }
+
+    public static List<WebElement> getElementsTAG(WebElement container, String tag)
+    {
+        return container.findElements(By.tagName(tag));
+    }
+
+    public static List<WebElement> getElementsTAG(WebDriver driver, String tag)
+    {
+        return driver.findElements(By.tagName(tag));
+    }
+
+    public static List<WebElement> getElementsCSS(WebDriver driver, String tag)
+    {
+        return driver.findElements(By.cssSelector(tag));
     }
 
     /** Output **/

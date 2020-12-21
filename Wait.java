@@ -52,6 +52,29 @@ public class Wait
         }
     }
 
+    public static void waitForVisibleCSS(WebDriverWait wait, String selector)
+    {
+        System.out.println("\nWaiting for visible element by css: "+selector);
+        boolean found = false;
+        try
+        {
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(selector)));
+            found = true;
+        }catch(Exception e)
+        {
+            found = false;
+        }
+
+        if(found)
+        {
+            System.out.print("Found visible element by css: "+selector);
+        }
+        else
+        {
+            System.out.print("Did not find visible element by css: "+selector);
+        }
+    }
+
     public static void waitForClickableCSS(WebDriverWait wait, String selector)
     {
         System.out.println("\nWaiting for clickable element by css: "+selector);

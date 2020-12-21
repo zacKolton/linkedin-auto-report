@@ -85,6 +85,32 @@ public class Interaction
         }
     }
 
+    public static void submit(WebElement element)
+    {
+        System.out.println("\nAttempting submit form for element: "+Elements.toString(element));
+        boolean clicked = false;
+        if(element != null)
+        {
+            try
+            {
+                element.submit();
+                clicked = true;
+            }catch(Exception e)
+            {
+                clicked = false;
+            }
+    
+            if(clicked)
+            {
+                System.out.println("Successful submit on form for element: "+Elements.toString(element));
+            }
+            else
+            {
+                System.out.println("Unsuccessful submit on form for element: "+Elements.toString(element));
+            }
+        }
+    }
+
     public static void clickJS(WebElement element, WebDriver driver)
     {
         JavascriptExecutor js = (JavascriptExecutor)driver;
